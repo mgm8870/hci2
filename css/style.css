@@ -151,7 +151,7 @@ legend { border: 0; *margin-left: -7px; padding: 0; }
  * 3. Define consistent vertical alignment display in all browsers
  */
 
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input, select, textarea { font-size: 30px; margin: 10px 0 10px 0; vertical-align: baseline; *vertical-align: middle; height:40px; }
 
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
@@ -196,7 +196,19 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
 /* Colors for form validity */
 input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
+input:invalid, textarea:invalid { background-color: #f0f0f0; }
+
+#loginForm {
+		width:500px;
+		height: 400px;
+		margin:150px auto;
+		text-align:left;
+		padding:15px;
+		border:3px solid #dfdfdf;
+		background-color:#eee;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}
 
 
 /* =============================================================================
@@ -213,29 +225,94 @@ td { vertical-align: top; }
 #loginForm{
   text-align:center;
 }
+
 body{
   width:1140px;
   margin-left:auto;
   margin-right:auto;
   margin-top:none;
+  text-align:center;
+  background-color:#b0c4de;
 }
 #voteForm{
   border:3px solid black;
   height:750px;
   margin:4%;
+  text-align:left;
 }
 button{
+	height: 50px;
+	width: 100px;
+	background-image:;
   border-radius: 12px;
 }
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myPane {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;	
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	/* css3 drop shadow */
+	-webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
 #contentContainer{
-  border:3px solid black;
+  border:6px solid white;
   border-radius: 12px;
+  background-color: white;
   margin: 10px;
   padding:10px;
   height:600px;
 }
 #innerContent{
-  height:590px;
+  height:600px;
   overflow-y:scroll;
   overflow-x:hidden;
 }
@@ -265,13 +342,23 @@ button{
 .electionName{
   text-align:center;
 }
+
+.blue {
+	color: #56C4F0;
+}
+
 #thanks{
   margin:0 auto;
   text-align:center;
 }
 
 
-
+::selection {
+        background: #a8d1ff;
+}
+::-moz-selection {
+        background: #a8d1ff;
+}
 
 
 

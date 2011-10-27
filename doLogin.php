@@ -11,10 +11,10 @@ if(mysql_num_rows($attempt) > 0){
     $_SESSION['userID'] = $unRow[id];
     $_SESSION['name'] = $unRow[name];
     $_SESSION['progress'] = 0;
-
-    header("Location: /vote.php");
+//changed header redirect
+    header("Location: vote.php");
 }else{
-    header("Location: /index.php");
+    header("Location: index.php");
     $_SESSION['flash'] = "Invalid User Name or Password ($un/$pw)";
 }
 ?>

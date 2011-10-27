@@ -47,13 +47,13 @@ header("Locaiton: /index.php");
     <header>
 
     </header>
-    <div id="main" role="main">
+    <div id="main" role="main" class="myPane">
       <div id="voteForm">
 	<?
 	echo $_SESSION['name'];
 	?>
 	<div id="progBarContainer">Progress: <progress id="progBar" value="getProgress();" max="100"></progress></div>
-	<div id="contentContainer">
+	<div id="contentContainer" style="padding: 0px;">
 	<div id="innerContent">
 	</div>
 

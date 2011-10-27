@@ -45,14 +45,14 @@ include_once('db_include.php');
 
     </header>
     <div id="main" role="main">
-	<div id="loginForm">
+	<div class="myPane" id="loginForm">
 	<h1>EZ Ballot</h1>
 	<form id="login" action="doLogin.php" method="POST">
 		<input type="text" id="username" name="username" required placeholder="User Name"/><br />
 		<input type="password" id="password" name="password" required placeholder="Password"/><br />
 		<?php echo $_SESSION['flash'].  "<br />"; ?>
-		<button type="submit" id="submit">Submit</button><br />
-		<button type="button" id="callForHelp">Call for Help</button>
+		<button class="myButton" type="submit" id="submit">Log In</button>
+		<button class="myButton" type="button" id="callForHelp" style="width: 150px;">Call for Help</button>
 		<p>Username and Password are your DCE account as listed in myCourses</p>
 	</form>
 	</div>

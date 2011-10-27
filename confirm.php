@@ -9,7 +9,7 @@ $presRes = mysql_query("select candidates.id, candidates.name as 'Candidate', su
 echo "<h1 class=\"electionName\">Presidential Election - Your Choice</h1>";
 while($row = mysql_fetch_assoc($presRes)){
   echo "<div class=\"candidateProfile\">";
-  echo "<img class=\"candidatePhoto\" src=\"/img/$row[photo]\" />";
+  echo "<img class=\"candidatePhoto\" src=\"img/$row[photo]\" />";
   echo "<h1>$row[Candidate]</h1>";
   echo "<p class=\"candidateBio\">$row[summary]</p>";
   echo "<div style=\"clear:both\"></div>";
@@ -21,7 +21,7 @@ $senRes = mysql_query("select candidates.id, candidates.name as 'Candidate', sum
 echo "<h1 class=\"electionName\">Senatorial Election - Your Choice</h1>";
 while($row = mysql_fetch_assoc($senRes)){
   echo "<div class=\"candidateProfile\">";
-  echo "<img class=\"candidatePhoto\" src=\"/img/$row[photo]\" />";
+  echo "<img class=\"candidatePhoto\" src=\"img/$row[photo]\" />";
   echo "<h1>$row[Candidate]</h1>";
   echo "<p class=\"candidateBio\">$row[summary]</p>";
   echo "<div style=\"clear:both\"></div>";
